@@ -144,38 +144,44 @@
     }
   
     @media (max-width: 768px) {
-      html {
-        font-size: 1rem;
-      }
-  
-      .main-content {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 1.5rem;
-      }
-  
-      .right-column {
-        margin-top: 20px;
-      }
-  
-      .carousel-container {
-        padding: 20px 10px;
-      }
-  
-      .carousel-item img {
-        max-height: 300px;
-        transform: none !important;
-        box-shadow: none !important;
-      }
-  
-      .right-column img {
-        max-width: 320px;
-      }
+    html {
+      font-size: 0.95rem;
     }
+  
+    .main-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 1rem;
+    }
+  
+    .left-column,
+    .right-column {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .right-column {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 0;
+    }
+  
+    .right-column img {
+      width: 240px;
+      height: 240px;
+    }
+  
+    .section-box {
+      padding: 20px;
+    }
+  }
   </style>  
 </head>
 <body>
-  <!-- Top Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mustafa Malik</a>
@@ -189,9 +195,9 @@
     </div>
   </nav>
 
-  <!-- About Me + Skills + Image -->
+
   <div class="container-fluid main-content">
-    <!-- Left Column -->
+
     <div class="left-column">
       <div class="curved-box about-bg section-box">
         <h3>About Me</h3>
@@ -201,8 +207,7 @@
       </div>
       <div class="curved-box skills-bg section-box">
         <h3>Skills</h3>
-        
-        <!-- Languages Section -->
+
         <h4>Languages</h4>
         <span class="badge bg-primary">C#</span>
         <span class="badge bg-primary">Python</span>
@@ -215,7 +220,7 @@
         <span class="badge bg-primary">Git</span>
         <span class="badge bg-primary">JavaScript</span>
       
-        <!-- Soft Skills Section -->
+
         <h4>Soft Skills</h4>
         <span class="badge bg-secondary">Agile Development (Scrum & Kanban)</span>
         <span class="badge bg-secondary">Documentation</span>
@@ -225,7 +230,7 @@
         <span class="badge bg-secondary">Effective Communication</span>
         <span class="badge bg-secondary">Adaptability</span>
       
-        <!-- Platforms Section -->
+
         <h4>Platforms</h4>
         <span class="badge bg-success">GitHub</span>
         <span class="badge bg-success">VS Code</span>
@@ -238,13 +243,13 @@
       </div>
     </div>
 
-    <!-- Right Column -->
+
     <div class="right-column">
       <img src="../images/pfp.png" alt="Profile Photo"/>
     </div>
   </div>
 
-  <!-- Carousel Section -->
+
   <div class="container my-5">
     <div class="carousel-container section-box">
       <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -274,7 +279,7 @@
     </div>
   </div>
 
-  <!-- Education and Experience -->
+
   <div class="container-fluid px-5 my-4">
     <div class="row">
       <div class="col-md-6">
@@ -306,10 +311,10 @@
     </div>
   </div>
 
-  <!-- Extra Spacer to Extend Page Length -->
+
   <div style="height: 180px;"></div>
 
-  <!-- Footer -->
+
   <footer class="footer text-white py-4">
     <p>+44 07479266824 | LinkedIn | malikmustafa60a@gmail.com</p>
   </footer>
