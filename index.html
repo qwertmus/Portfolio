@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mustafa Malik Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    html {
+      font-size: 1.25rem;
+    }
+  
+    body {
+      background-image: url('../images/Rectangle1.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  
+    .navbar, .footer {
+      background-color: black;
+      padding: 1rem 0;
+      font-size: 1.1rem;
+    }
+  
+    .navbar-brand {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+  
+    .navbar-nav .nav-link {
+      margin-right: 1rem;
+    }
+  
+    .footer p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+  
+    .section-box {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+    }
+  
+    .curved-box {
+      background-size: cover;
+      border-radius: 25px;
+      padding: 30px;
+    }
+  
+    .about-bg {
+      background-image: url('../images/Rectangle6.png');
+    }
+  
+    .skills-bg {
+      background-image: url('../images/Rectangle14.png');
+    }
+  
+    .carousel-container {
+      background-image: url('../images/Rectangle10.png');
+      background-size: cover;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  
+    .carousel-item img {
+      max-height: 550px;
+      width: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .carousel-item img:hover {
+      transform: scale(1.05);
+      z-index: 2;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+  
+    .bottom-bg {
+      background-image: url('../images/Rectangle15.png');
+      background-size: cover;
+      border-radius: 20px;
+      padding: 30px;
+    }
+  
+    .badge {
+      margin: 5px;
+    }
+  
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 40px;
+      padding: 0 5%;
+    }
+  
+    .left-column {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .right-column {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .right-column img {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 25px;
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+  
+    .right-column img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    }
+  
+    footer {
+      margin-top: auto;
+      text-align: center;
+    }
+  
+    @media (max-width: 768px) {
+      html {
+        font-size: 1rem;
+      }
+  
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.5rem;
+      }
+  
+      .right-column {
+        margin-top: 20px;
+      }
+  
+      .carousel-container {
+        padding: 20px 10px;
+      }
+  
+      .carousel-item img {
+        max-height: 300px;
+        transform: none !important;
+        box-shadow: none !important;
+      }
+  
+      .right-column img {
+        max-width: 320px;
+      }
+    }
+  </style>  
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mustafa Malik</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me + Skills + Image -->
+  <div class="container-fluid main-content">
+    <!-- Left Column -->
+    <div class="left-column">
+      <div class="curved-box about-bg section-box">
+        <h3>About Me</h3>
+        <p>
+          A passionate, aspiring Software Engineer with a solid base in programming and problem solving, as well as a strong understanding of the software development life cycle. I have a passion for developing effective, robust and user-friendly applications. Have hands on experience in programming languages such as Python, C# and PHP. I always try to gain knowledge from new technologies and apply them in real life situations, I thrive in fast paced environments where teamwork and problem-solving result in successful outcomes. Looking to join a dynamic team and contribute my skills and enthusiasm, as well as some new ideas, great documentation skills and a commitment to writing clean, maintainable code. I am ready to contribute to the tech industry in a meaningful way!
+        </p>        
+      </div>
+      <div class="curved-box skills-bg section-box">
+        <h3>Skills</h3>
+        
+        <!-- Languages Section -->
+        <h4>Languages</h4>
+        <span class="badge bg-primary">C#</span>
+        <span class="badge bg-primary">Python</span>
+        <span class="badge bg-primary">Laravel PHP</span>
+        <span class="badge bg-primary">PHP</span>
+        <span class="badge bg-primary">Flutter</span>
+        <span class="badge bg-primary">Dart</span>
+        <span class="badge bg-primary">HTML</span>
+        <span class="badge bg-primary">CSS</span>
+        <span class="badge bg-primary">Git</span>
+        <span class="badge bg-primary">JavaScript</span>
+      
+        <!-- Soft Skills Section -->
+        <h4>Soft Skills</h4>
+        <span class="badge bg-secondary">Agile Development (Scrum & Kanban)</span>
+        <span class="badge bg-secondary">Documentation</span>
+        <span class="badge bg-secondary">Fluent in Dutch</span>
+        <span class="badge bg-secondary">Team-Oriented</span>
+        <span class="badge bg-secondary">Problem-Solving</span>
+        <span class="badge bg-secondary">Effective Communication</span>
+        <span class="badge bg-secondary">Adaptability</span>
+      
+        <!-- Platforms Section -->
+        <h4>Platforms</h4>
+        <span class="badge bg-success">GitHub</span>
+        <span class="badge bg-success">VS Code</span>
+        <span class="badge bg-success">PyCharm</span>
+        <span class="badge bg-success">Google Colab</span>
+        <span class="badge bg-success">Firebase</span>
+        <span class="badge bg-success">MySQL</span>
+        <span class="badge bg-success">SQLite</span>
+        <span class="badge bg-success">Figma</span>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+      <img src="../images/pfp.png" alt="Profile Photo"/>
+    </div>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="container my-5">
+    <div class="carousel-container section-box">
+      <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/elarosdash.png" class="d-block w-100" alt="Project 1">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/banksys.png" class="d-block w-100" alt="Project 2">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/mortgage.png" class="d-block w-100" alt="Project 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education and Experience -->
+  <div class="container-fluid px-5 my-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="bottom-bg section-box">
+            <h4>Education</h4>
+            <ul>
+              <li><strong>2023–2027</strong>: Software Engineering BEng – Sheffield Hallam University – Sheffield</li>
+              <li><strong>2021–2023</strong>: A Levels – Thomas Rotherham College – Rotherham<br>• Maths, Computer Science and Physics</li>
+              <li><strong>2020–2021</strong>: GCSEs – Thomas Rotherham College – Rotherham<br>• Maths, English and Triple Science</li>
+              <li><strong>2015–2020</strong>: VWO – Comenius Lyceum West – Amsterdam<br>• Natuur en Gezondheid – VWO 5</li>
+            </ul>            
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bottom-bg section-box">
+            <h4>Experience</h4>
+            <ul>
+              <li>
+                <strong>July 2022 – September 2022</strong>: Inbound Call Handler – Ant Marketing – Sheffield<br>
+                Worked for Ant Marketing under the supervision of JD as a JD representative, handling calls. Proficient in tracking packages, effectively maintaining caller composure and providing reassurance through clear and empathetic communication. Through adept multitasking across various software platforms, I managed each call with utmost integrity to the company.
+              </li>
+              <li>
+                <strong>February 2018 – June 2019</strong>: Volunteer – Local Authority Recreation Centre – Amsterdam<br>
+                Volunteering work to help the local community become a better place. Participated in organising community events such as walks and mobile food/drink carts. Worked with small scale volunteering groups and mostly the elderly.
+              </li>
+            </ul>            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Extra Spacer to Extend Page Length -->
+  <div style="height: 180px;"></div>
+
+  <!-- Footer -->
+  <footer class="footer text-white py-4">
+    <p>+44 07479266824 | LinkedIn | malikmustafa60a@gmail.com</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
